@@ -18,5 +18,27 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-native": "^0.70.3"
+  },
+  "// Fix issue: Cannot find module ref.1": "https://github.com/vercel/turbo/issues/4771#issuecomment-1587351163",
+  "// Fix issue: Cannot find module ref.2": "https://github.com/vercel/turbo/discussions/612#discussioncomment-4175095",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "src/*",
+        "src/*/index",
+        "src/index"
+      ]
+    }
+  },
+  "publishConfig": {
+    "typesVersions": {
+      "*": {
+        "*": [
+          "dist/*.d.ts",
+          "dist/*/index.d.ts",
+          "dist/index.d.ts"
+        ]
+      }
+    }
   }
 }
