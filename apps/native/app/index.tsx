@@ -1,9 +1,9 @@
 import { Button } from "app";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { NativeTamaguiProvider } from "./NativeTamaguiProvider";
+import { NativeTamaguiProvider } from "../NativeTamaguiProvider";
 
-export default function Native() {
+export default function Page() {
   return (
     <NativeTamaguiProvider>
       <View style={styles.container}>

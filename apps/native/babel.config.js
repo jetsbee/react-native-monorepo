@@ -25,6 +25,8 @@ module.exports = function (api) {
       ],
       // NOTE: this is only necessary if you are using reanimated for animations
       "react-native-reanimated/plugin",
+      // ref. https://tamagui.dev/docs/guides/expo#update-babel--metro
+      "expo-router/babel",
     ],
-  }; // ref. https://tamagui.dev/docs/guides/expo#update-babel--metro
+  };
 };

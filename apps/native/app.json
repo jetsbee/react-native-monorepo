@@ -2,6 +2,7 @@
   "expo": {
     "name": "native",
     "slug": "native",
+    "scheme": "native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,17 +20,21 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.myapplication.app"
+      "bundleIdentifier": "com.native.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.myapplication.app"
+      "package": "com.native.app"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
