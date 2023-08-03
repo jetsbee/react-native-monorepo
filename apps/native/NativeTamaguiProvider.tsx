@@ -1,6 +1,8 @@
-import { TamaguiProviderProps } from "app";
 import React from "react";
-import { TamaguiProvider } from "tamagui"; // note: design system can use @tamagui/core
+import {
+  TamaguiProvider /* note: design system can use @tamagui/core */,
+  TamaguiProviderProps,
+} from "tamagui";
 import config from "./tamagui.config";
 
 export const NativeTamaguiProvider = ({
