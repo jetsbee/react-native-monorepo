@@ -1,20 +1,23 @@
 import { Button } from "app";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { NativeTamaguiProvider } from "./NativeTamaguiProvider";
 
 export default function Native() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Native</Text>
-      <Button
-        onClick={() => {
-          console.log("Pressed!");
-          alert("Pressed!");
-        }}
-        text="Boop"
-      />
-      <StatusBar style="auto" />
-    </View>
+    <NativeTamaguiProvider>
+      <View style={styles.container}>
+        <Text style={styles.header}>Native</Text>
+        <Button
+          onClick={() => {
+            console.log("Pressed!");
+            alert("Pressed!");
+          }}
+          text="Boop"
+        />
+        <StatusBar style="auto" />
+      </View>
+    </NativeTamaguiProvider>
   );
 }
 

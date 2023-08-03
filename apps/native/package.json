@@ -3,26 +3,32 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start-native": "TAMAGUI_TARGET=native expo start -c",
+    "start-web": "TAMAGUI_TARGET=web expo start -c",
+    "android": "TAMAGUI_TARGET=native expo run:android",
+    "ios": "TAMAGUI_TARGET=native expo run:ios",
+    "web": "TAMAGUI_TARGET=web expo start --web",
     "eject": "expo eject",
-    "dev": "yarn start"
+    "dev": "yarn start-native"
   },
   "dependencies": {
     "app": "*",
     "expo": "^49.0.6",
+    "expo-font": "^11.4.0",
+    "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "^0.72.3",
+    "react-native-reanimated": "~3.3.0",
     "react-native-web": "^0.19.7"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
+    "@tamagui/babel-plugin": "^1.48.8",
     "@types/react": "^18.2.18",
     "@types/react-native": "^0.72.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "typescript": "^5.1.6"
   },
   "private": true

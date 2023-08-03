@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tamagui/config": "^1.48.7",
+    "@tamagui/next-theme": "^1.48.7",
     "app": "*",
     "next": "^13.4.12",
     "react": "^18.2.0",
@@ -16,6 +18,7 @@
     "react-native-web": "^0.19.7"
   },
   "devDependencies": {
+    "@tamagui/next-plugin": "^1.48.7",
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",

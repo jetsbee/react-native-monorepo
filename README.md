@@ -4,11 +4,25 @@ This is an official starter Turborepo.
 
 ## Scripts to run in dev
 ```sh
+# for build
+yarn build
+
 # for iOS
 yarn workspace native ios
 
+# for android
+yarn workspace native android
+
 # for web
 yarn workspace web dev
+```
+
+## Temporary fix if android script is not working
+- Change distributionUrl value as below in "apps/native/android/gradle/wrapper/gradle-wrapper.properties"
+```
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.2-all.zip
+
+# ref. https://github.com/react-native-community/cli/issues/1719#issuecomment-1399202729
 ```
 
 ## Using this example
