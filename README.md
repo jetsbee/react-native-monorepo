@@ -25,6 +25,15 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.2-all.zip
 # ref. https://github.com/react-native-community/cli/issues/1719#issuecomment-1399202729
 ```
 
+## Temporary fix zombie processes issue with next.js
+- ref 1. https://github.com/vercel/next.js/issues/45508#issuecomment-1646657899
+- ref 2. https://github.com/vercel/next.js/issues/45508#issuecomment-1653226340
+- ref 3. https://github.com/vercel/next.js/issues/45508#issuecomment-1560568292
+```sh
+# Kill the zombie processes
+yarn workspace web kill-zombies
+```
+
 ## Using this example
 
 Run the following command:
