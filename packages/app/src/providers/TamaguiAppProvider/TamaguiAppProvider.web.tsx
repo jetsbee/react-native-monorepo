@@ -10,14 +10,14 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { TamaguiProvider, createTamagui } from "tamagui";
 
-import Tamagui from "../tamagui.config";
+import { config as Tamagui } from "../../tamagui.config";
 
 const config = createTamagui({
   ...configBase,
   themeClassNameOnRoot: false,
 });
 
-export const NextTamaguiProvider = ({
+export const TamaguiAppProvider = ({
   children,
 }: {
   children: React.ReactNode;
@@ -66,3 +66,4 @@ export const NextTamaguiProvider = ({
 // ref 1. https://tamagui.dev/docs/guides/next-js#server-components
 // ref 2. https://github.com/tamagui/tamagui/blob/c5ee9816f95c376b99a889660626b24cf72d8c89/starters/next-expo-solito/apps/next/app/TamaguiProvider.tsx
 // ref 3. https://github.com/tamagui/tamagui/issues/1402#issue-1794364249
+// ref 4. https://solito.dev/app-directory/overview#appstyles-providertsx

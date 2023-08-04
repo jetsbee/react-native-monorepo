@@ -1,4 +1,5 @@
-import { NextTamaguiProvider } from "./NextTamaguiProvider";
+import { Providers } from "app/src/providers";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NextTamaguiProvider>{children}</NextTamaguiProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

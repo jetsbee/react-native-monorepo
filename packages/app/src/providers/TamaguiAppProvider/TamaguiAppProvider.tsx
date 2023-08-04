@@ -3,9 +3,9 @@ import {
   TamaguiProvider /* note: design system can use @tamagui/core */,
   TamaguiProviderProps,
 } from "tamagui";
-import config from "./tamagui.config";
+import { config } from "../../tamagui.config";
 
-export const NativeTamaguiProvider = ({
+export const TamaguiAppProvider = ({
   children,
   ...rest
 }: Omit<TamaguiProviderProps, "config">) => {

@@ -1,11 +1,11 @@
-import { Button } from "app";
+import { Button } from "app/src/button";
+import { Providers } from "app/src/providers";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { NativeTamaguiProvider } from "../NativeTamaguiProvider";
 
 export default function Page() {
   return (
-    <NativeTamaguiProvider>
+    <Providers>
       <View style={styles.container}>
         <Text style={styles.header}>Native</Text>
         <Button
@@ -17,7 +17,7 @@ export default function Page() {
         />
         <StatusBar style="auto" />
       </View>
-    </NativeTamaguiProvider>
+    </Providers>
   );
 }
 

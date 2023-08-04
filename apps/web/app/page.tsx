@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "app";
+import { Button } from "app/src/button";
 
 import styles from "../styles/index.module.css";
 
