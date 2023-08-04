@@ -1,6 +1,5 @@
-# Turborepo react-native starter
-
-This is an official starter Turborepo.
+# Example of react-native-monorepo
+- Based on https://github.com/vercel/turbo/tree/5ff0ab2720708924ea3fcb50798f388a25c02fae/examples/with-react-native-web
 
 ## Scripts to run in dev
 ```sh
@@ -32,14 +31,6 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.2-all.zip
 ```sh
 # Kill the zombie processes
 yarn workspace web kill-zombies
-```
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-react-native-web
 ```
 
 ## What's inside?
